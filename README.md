@@ -1,2 +1,43 @@
-# Simulating-Neural-Silence-Persistent-Vegetative-State-Modeling-via-LIF-Neurons
-Simulating Neural Silence: Persistent Vegetative State Modeling via LIF Neurons 프로젝트
+# LIF Neuron Simulation
+
+LIF(Leaky Integrate-and-Fire) 뉴런 모델을 Python으로 구현하고,
+입력 전류와 시간상수 변화가 뉴런의 막전위와 발화에 어떤 영향을
+미치는지 관찰하는 기초 신경과학 시뮬레이션 프로젝트입니다.
+
+## 1. 프로젝트 배경
+
+이 프로젝트의 장기적인 목적은 의식 저하 상태에서 나타나는
+신경 활동의 변화를 계산 모델을 통해 탐구하는 것입니다.
+
+첫 단계에서는 복잡한 뇌 전체를 구현하기보다,
+단일 LIF 뉴런이 입력을 받아 막전위를 축적하고
+임계값에 도달했을 때 발화하는 과정을 구현합니다.
+
+## 2. 핵심 연구 질문
+
+- 입력 전류가 증가하면 뉴런의 발화 빈도는 어떻게 변하는가?
+- 입력 전류가 없을 때 막전위는 어떻게 변화하는가?
+- 시간상수 tau가 달라지면 막전위의 누출 속도는 어떻게 변하는가?
+- 단일 뉴런의 활동 저하를 여러 뉴런의 네트워크로 확장할 수 있는가?
+
+## 3. 현재 구현 범위
+
+- 단일 LIF 뉴런 구현
+- 시간에 따른 막전위 계산
+- 임계값 도달 시 스파이크 발생
+- 스파이크 이후 막전위 초기화
+- 막전위와 스파이크 결과 시각화
+
+## 4. 프로젝트 구조
+
+```text
+lif-neuron-simulation/
+├── README.md
+├── requirements.txt
+├── src/
+│   └── basic_lif.py
+├── experiments/
+├── results/
+│   ├── figures/
+│   └── data/
+└── notes/
